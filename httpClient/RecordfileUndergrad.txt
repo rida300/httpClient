@@ -1,0 +1,261 @@
+HTTP/1.1 200 OK
+Date: Fri, 13 Dec 2019 14:26:21 GMT
+Server: Apache/2.4.38 (Debian)
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Minor | Computer Science | Kansas State University</title><link rel="stylesheet" href="/ksu-resources/branding/2/css/styles-min.css?ver=3.1.30">
+<link rel="stylesheet" href="/ksu-resources/forms/3/css/forms-min.css">
+<meta name="theme-color" content="#512888">
+<script>
+var page_id="https://www.cs.ksu.edu/undergraduate/minor/index.html";
+if(typeof console=="undefined"){var console={};}
+if(!console.log){console.log=function() {};}
+if(typeof KSU=='undefined'){var KSU={};}
+KSU.config = {searchName:"Computer Science",searchUrl:"www.cs.ksu.edu",url:"https://www.cs.ksu.edu/undergraduate/minor/index.html"};
+KSU.dates=[];KSU.dates.push("2019-08-12T15:08");
+</script><script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+(function(){
+var cd=/k-state\.edu/.test(document.location.hostname)?'k-state.edu':'auto';
+ga('create','UA-36236856-1',cd);
+ga('require','linkid', {'levels':9});
+ga('require', 'displayfeatures');
+ga('set', 'dimension1', '3.1.30');
+ga('send','pageview');
+
+try{
+var hp = document.referrer.replace(/https?:\/\//, ""),
+ds=hp.substring(0,KSU.config.searchUrl.length)!==KSU.config.searchUrl;
+}catch(e){}
+ga('create','UA-19758818-1',cd,'site',{'alwaysSendReferrer':ds});
+ga('site.send','pageview');
+})();
+</script><script async="" src="https://www.google-analytics.com/analytics.js"></script>
+
+      
+</head>
+<body class="ksu-branding-ksu ksu-with-sidebar ksu-with-secondary-resources yui3-skin-sam"><div id="ksu-header">
+   <div id="ksu-header-top">
+      <div id="ksu-header-masthead" class="ksu-page-center">
+         <h1><a id="ksu-wordmark" href="http://www.k-state.edu/">Kansas State University</a></h1>
+         <div id="ksu-search-block"><a href="//search.k-state.edu/">search</a><form id="ksu-search" action="//search.k-state.edu/">
+               <fieldset><label for="ksu-qt">Search K-State web, people, directories</label><input type="search" id="ksu-qt" name="qt" value="Search web, people, directories"></fieldset>
+            </form>
+            <div id="ksu-search-sub">
+               <div id="ksu-atoz"><a href="//www.k-state.edu/directories/">Browse A-Z</a></div>
+               <div id="ksu-signin">
+                  <div id="ksu-signin-label"><a href="https://signin.k-state.edu/">Sign in</a></div>
+                  <div class="ksu-downarrow"><a href="https://signin.k-state.edu/"></a></div>
+               </div>
+            </div>
+            <div id="ksu-signin-box">
+                <ul id="ksu-signin-links">
+                   <li><a href="http://public.online.k-state.edu">K-State Online</a></li>
+                   <li><a href="https://orgsync.com/sso_redirect/kansas-state-university">OrgSync</a></li>
+                   <li><a href="http://www.lib.k-state.edu/library-accounts">MyLibrary</a></li>
+                   <li><a href="https://ksis.k-state.edu">KSIS</a></li>
+                   <li><a href="https://hris.k-state.edu">HRIS</a></li>
+                   <li><a href="https://webmail.ksu.edu">Webmail</a></li>
+                </ul>
+                <p><a href="http://www.k-state.edu/its/status/">Status of ITS resources</a></p>
+                <a class="ksu-button" href="https://connect.k-state.edu/">Sign in to Connect</a>
+                <a title="close" class="ksu-icon-close"></a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="ksu-unitbar-wrapper"><div id="ksu-unitbar"><ol id="ksu-breadcrumbs"><li><a href="https://www.k-state.edu/">K-State home</a></li><li><span>»</span><a href="http://www.engg.ksu.edu">Engineering</a></li><li><span>»</span><a href="/">Computer Science</a></li><li><span>»</span><a href="/undergraduate/">Undergraduate</a></li></ol><h2><a href="/">Computer Science</a></h2></div></div><div id="ksu-wrapper" class="ksu-page-center"><div id="ksu-inner-wrapper"><div id="ksu-sidebar" class="ksu-sidebar"><div class="ksu-round-top"><ul class="ksu-unit-menu">
+<li><a href="/">Home</a></li>
+<li><a href="/about/">About</a>
+<ul>
+<li><a href="/about/advisory_board/">Advisory Board</a></li>
+<li><a href="/about/history/">History</a></li>
+<li><a href="/about/outreach/">Outreach</a>
+<ul>
+<li><a href="/about/outreach/hs_programming/">High School Programming Contest</a></li>
+</ul>
+</li>
+<li><a href="https://www.cs.ksu.edu/news/Facts.sheet/2018-2019%20CS%20Fact%20Sheet.pdf">Fact Sheet</a></li>
+<li><a href="/about/Policies/policies.html">CS Policies</a></li>
+<li><a href="http://www.k-state.edu/provost/deptdocs/eng/cis/cisdeptdoc.pdf">P&amp;T Guidelines</a></li>
+</ul>
+</li>
+<li><a href="/people/">People</a>
+<ul>
+<li><a href="/people/faculty/">Faculty</a>
+<ul>
+<li><a href="/people/faculty/emeritus/">Emeritus</a></li>
+</ul>
+</li>
+<li><a href="/people/staff/">Staff</a></li>
+</ul>
+</li>
+<li><a href="/research/">Research</a>
+<ul>
+<li><a href="http://cisa.k-state.edu/">Cybersecurity</a></li>
+<li><a href="http://santoslab.org/">High Assurance Software Engineering</a></li>
+<li><a href="/cps/">Cyber-Physical Systems</a></li>
+<li><a href="/ai_data_science/">Artificial Intelligence &amp;&nbsp;Data Science</a></li>
+</ul>
+</li>
+<li><a href="/future_students/">Future Students</a>
+<ul>
+<li><a href="https://www.k-state.edu/admissions/">Apply to K-State</a></li>
+<li><a href="/future_students/undergraduate/">Undergraduate</a></li>
+<li><a href="/future_students/scholarships.html">Scholarships</a></li>
+<li><a title="Scholars" href="/scholars/">Scholars Program</a></li>
+<li><a href="/future_students/graduate/">Graduate</a></li>
+<li><a href="http://www.computerscience.org/careers/">Careers in CS</a></li>
+<li><a href="/future_students/undergraduate/degreevalue/index.html">Degree Value</a></li>
+<li><a href="https://www.engg.ksu.edu/future-students/request-info/">Request Info</a></li>
+</ul>
+</li>
+<li><a href="/graduate/">Graduate Programs</a>
+<ul>
+<li><a href="/graduate/ms/">Master of Science</a></li>
+<li><a href="/graduate/mse/">Master of Software Engineering</a>
+<ul>
+<li><a href="/graduate/mse/portfolio/">Portfolio</a></li>
+</ul>
+</li>
+<li><a href="/graduate/phd/">Doctor of Philosophy</a></li>
+<li><a href="/undergraduate/courses.html">Course Catalog</a></li>
+</ul>
+</li>
+<li><a href="/undergraduate/">Undergraduate Program</a>
+<ul>
+<li><a href="/undergraduate/advising/">Advising</a>
+<ul>
+<li><a href="/undergraduate/Change_Majors/changemajors.html">Change Majors</a></li>
+<li><a href="/undergraduate/CSflowchartfall2018.pdf">Undergraduate Flowchart</a></li>
+</ul>
+</li>
+<li><a href="/undergraduate/Professional%20Program.html">Apply to the Professional Program</a></li>
+<li><a href="/undergraduate/cs/">Computer Science</a></li>
+<li><a href="/undergraduate/CS_MBA/">CS + MBA</a></li>
+<li><a href="/undergraduate/cs_Entrepreneuriship/index.html">CS - Entrepreneurship</a></li>
+<li><a href="/undergraduate/cs_Cybersecurity/">CS - Cyber Security</a></li>
+<li><a href="/scholars/">Scholars Program</a></li>
+<li><a href="/undergraduate/CyberCorps/cybercorps.html">CyberCorps</a></li>
+<li><a href="/core/certificate-application/Apply.html">CS Certificate</a></li>
+<li><a href="/undergraduate/minor/index.html">CS Minor</a></li>
+<li><a href="/undergraduate/courses.html">Course Catalog</a></li>
+</ul>
+</li>
+<li><a href="/core/">Computational Core</a>
+<ul>
+<li><a href="/core/certificate-application/Apply.html">Apply</a></li>
+</ul>
+</li>
+<li><a href="/student_organizations/">Student Organizations</a>
+<ul>
+<li><a href="http://acm.cs.ksu.edu/">ACM</a></li>
+<li><a href="https://orgsync.com/98242/chapter">Cyber Defense Club</a></li>
+<li><a href="https://gdc.cs.ksu.edu/">Game Development Club</a></li>
+<li><a href="https://hackkstate.tech">Hack&nbsp;K-State</a></li>
+<li><a href="http://mdc.cs.ksu.edu/">Mobile Development Club</a></li>
+<li><a href="http://www.ksuesports.com">K-State eSports</a></li>
+<li><a href="http://ksuesports.org">SIGAI</a></li>
+</ul>
+</li>
+<li><a href="/Brochures/">Brochures</a>
+<ul>
+<li><a href="/undergraduate/CS%20Booklet.pdf">Undergraduate Brochure</a></li>
+<li><a href="/undergraduate/Cybersecurity%20brochure.pdf">Cybersecurity Brochure</a></li>
+<li><a href="/Brochures/cs-scholars-brochure-may2018.pdf">Scholars Brochure</a></li>
+<li><a href="https://www.cs.ksu.edu/graduate/CS%20Grad%20Program%20Brochure.pdf">Graduate Program Brochure</a></li>
+</ul>
+</li>
+<li><a href="/employment/">Employment</a></li>
+<li><a href="/hspc/">High School Programming Contest</a>
+<ul>
+<li><a href="/hspc/Registration.Rules/">Registration and Rules</a></li>
+<li><a href="/hspc/Scorecards.and.problems/">Scorecards &amp; Problems</a></li>
+<li><a href="/hspc/Transportation.Information/">Transportation Information</a></li>
+</ul>
+</li>
+<li><a href="/student-success/index.html">Student Success</a>
+<ul>
+<li><a href="/student-success/learning-strategies/index.html">Learning Strategies</a></li>
+<li><a href="/student-success/time-management/index.html">Time Management</a></li>
+<li><a href="/student-success/studying-and-stem/index.html">Studying &amp; S.T.E.M.</a></li>
+</ul>
+</li>
+<li><a href="/news/">News</a></li>
+<li><a href="/accreditation/">Program Accreditation</a></li>
+</ul></div><div class="ksu-sidebar-address"><p><a href="/index.html"><strong>Computer Science</strong></a><br /><span>2184 Engineering Hall</span><br /><span>1701D Platt St.</span><br /><span>Manhattan, KS 66506</span></p>
+<p>785-532-6350<br />Fax: 785-532-7353<br /><a href="mailto:csoffice@k-state.edu">csoffice@k-state.edu</a></p>
+<p><strong>Office Hours</strong><br />Monday-Friday<br />8 a.m.-5 p.m.</p>
+<table border="0">
+<tbody>
+<tr>
+<td style="border-bottom-width: 0px; border-bottom-style: initial;"><a href="https://www.facebook.com/kstate.CS/"><img src="https://www.engg.ksu.edu/docs/social-icons/facebook.png" alt="Facebook icon" width="32" height="32" /></a></td>
+<td style="border-bottom-width: 0px; border-bottom-style: initial;"><a href="https://twitter.com/kstate_CS"><img src="https://www.engg.ksu.edu/docs/social-icons/twitter.png" alt="Twitter icon" width="32" height="32" /></a></td>
+</tr>
+</tbody>
+</table></div></div>
+<div id="ksu-main-content" class="ksu-main-content">
+         <h3>Computer Science Minor</h3>
+<p><span>The Department of Computer Science offers a minor in computer science, targeted towards engineering students as an area of special interest outside their major. The minor focuses on mathematical and logical foundations for programming. The following courses must be completed:</span></p>
+<p>&nbsp;</p>
+<h3>Program Requirements (16 credit hours)</h3>
+<p>Prerequisites (in addition to any prerequisites for the required courses):</p>
+<ul><li class="acalog-course"><a href="https://catalog.k-state.edu/preview_program.php?catoid=42&amp;poid=13853">MATH 220 - Analytic Geometry and Calculus I</a>&nbsp;<strong>Credits:</strong>&nbsp;4</li></ul>
+<p>&nbsp;</p>
+<h3>Required courses</h3>
+<ul><li class="acalog-course"><a href="https://catalog.k-state.edu/preview_program.php?catoid=42&amp;poid=13853">CIS 115 - Introduction to Computing Science</a>&nbsp;<strong>Credits:</strong>&nbsp;3</li><li class="acalog-course"><a href="https://catalog.k-state.edu/preview_program.php?catoid=42&amp;poid=13853">CIS 200 - Programming Fundamentals</a>&nbsp;<strong>Credits:</strong>&nbsp;4</li><li class="acalog-course"><a href="https://catalog.k-state.edu/preview_program.php?catoid=42&amp;poid=13853">CIS 300 - Data and Program Structures</a>&nbsp;<strong>Credits:</strong>&nbsp;3</li><li class="acalog-course"><a href="https://catalog.k-state.edu/preview_program.php?catoid=42&amp;poid=13853">CIS 301 - Logical Foundations of Programming</a>&nbsp;<strong>Credits:</strong>&nbsp;3</li><li class="acalog-course"><a href="https://catalog.k-state.edu/preview_program.php?catoid=42&amp;poid=13853">ECE 241 - Introduction to Computer Engineering</a>&nbsp;<strong>Credits:</strong>&nbsp;3</li></ul>
+<p>&nbsp;</p>
+<p><strong>To apply for a minor, please fill out the form below.</strong></p>
+<div id="status_b8abc088-ca43-4696-bd01-b44ec741617b"></div><form id="form_b8abc088-ca43-4696-bd01-b44ec741617b" method="post" class="ouform" role="form"><style>
+				.hpb8abc088-ca43-4696-bd01-b44ec741617b
+				{display:none;margin-left:-1000px;}</style><span class="hpb8abc088-ca43-4696-bd01-b44ec741617b"><label for="hpb8abc088-ca43-4696-bd01-b44ec741617b" class="hpb8abc088-ca43-4696-bd01-b44ec741617b">If you see this don't fill out this input box.</label><input type="text" id="hpb8abc088-ca43-4696-bd01-b44ec741617b"></span><div id="name"><div class="form-group"><label for="id_name" class="control-label ">Name:<span class="required">*</span></label><div><input type="text" role="textbox" name="name" id="id_name" class="form-control" placeholder=""></div></div></div><div id="email"><div class="form-group"><label for="id_email" class="control-label ">Email:<span class="required">*</span></label><div><input type="text" role="textbox" name="email" id="id_email" class="form-control" placeholder=""></div></div></div><div id="wildcatid"><div class="form-group"><label for="id_wildcatid" class="control-label ">Wildcat ID Number:<span class="required">*</span></label><div><input type="text" role="textbox" name="wildcatid" id="id_wildcatid" class="form-control" placeholder=""></div></div></div><div id="major"><div class="form-group"><label for="id_major" class="control-label ">Major: <span class="required">*</span></label><div><input type="text" role="textbox" name="major" id="id_major" class="form-control" placeholder=""></div></div></div><div id="adddrop"><div class="form-group"><label for="id_adddrop" class="control-label ">Add/Drop<span class="required">*</span></label><div class="controls" id="id_adddrop"><!--Count: 2--><div><div class="checkbox"><label><input type="checkbox" role="checkbox" name="adddrop" value="Add">Add</label></div></div><!--Count: 2--><div><div class="checkbox"><label><input type="checkbox" role="checkbox" name="adddrop" value="Drop">Drop</label></div></div></div></div></div><input type="hidden" name="form_uuid" value="b8abc088-ca43-4696-bd01-b44ec741617b"><input type="hidden" name="site_name" value="cs"><div class="form-group"><div><button type="submit" id="btn_b8abc088-ca43-4696-bd01-b44ec741617b" class="btn btn-primary" role="button">
+					Submit
+				</button>&nbsp;
+					</div></div></form><style>
+			.hpb8abc088-ca43-4696-bd01-b44ec741617b{display:none;
+			margin-left:-1000px;}
+			
+			.helper-text{
+			margin-top: 6px;
+			margin-right: 1em;
+			font-size: 13px;
+			font-style: italic;}
+		</style>
+      </div><div id="ksu-sidebar-secondary" class="ksu-sidebar-secondary"></div></div></div>
+<div id="ksu-footer">
+   <div id="ksu-footer-bar">
+      <div class="ksu-page-center">
+         <ul id="ksu-footer-links">
+            <li><a href="//www.k-state.edu/contact/">Contact us</a></li>
+            <li><a href="//www.k-state.edu/advisories/">Emergency</a></li>
+            <li><a href="//www.k-state.edu/disclosures/">Statements and disclosures</a></li>
+            <li><a href="//www.k-state.edu/about/accessibility/">Accessibility</a></li>
+            <li><a href="http://ksdegreestats.org"><img src="/ksu-resources/branding/2/images/degreestats.png" alt="Kansas Degree Stats" class="ksu-degreestats" style="width:140px;"/></a></li>
+         </ul>
+         <ul id="ksu-footer-addr">
+            <li>Kansas State University</li>
+            <li>Manhattan, KS 66506</li>
+            <li>785-532-6011</li>
+            <li><a href="//www.k-state.edu/about/copyright.html">&copy; Kansas State University</a></li>
+
+<li><a style="text-decoration: none;color:#ACA697;"  href="https://a.cms.omniupdate.com/10?skin=k-state&amp;account=k-state&amp;site=cs&amp;action=de&amp;path=/undergraduate/minor/index.pcf">Updated: 8/28/19</a></li>
+         </ul>
+         <ul id="ksu-social">
+            <li><a class="ksu-facebook-icon" href="https://www.facebook.com/KState" title="Facebook"></a></li>
+            <li><a class="ksu-twitter-icon" href="https://twitter.com/KState" title="Twitter"></a></li>
+            <li><a class="ksu-youtube-icon" href="https://www.youtube.com/user/KState" title="YouTube"></a></li>
+            <li><a class="ksu-foursq-icon" href="https://foursquare.com/v/kansas-state-university/4ba0ec7cf964a520678737e3" title="Foursquare"></a></li>
+            <li><a class="ksu-gplus-icon" href="https://plus.google.com/u/0/112281507388935453137/posts" title="Google Plus"></a></li>
+         </ul>
+      </div>
+   </div>
+</div>
+
+<script>YUI_config = {comboBase: ('https:'== document.location.protocol?'https://yui-s':'http://yui')+'.yahooapis.com/combo?', combine: true};</script><script src="//www.k-state.edu/ksu-resources/yui/3.17.1/yui/yui-min.js"></script><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script src="/ksu-resources/forms/3/js/ouforms-min.js"></script><script src="/ksu-resources/branding/2/js/scripts-min.js?ver=3.1.30"></script><script></script>
+      
+</body></html>

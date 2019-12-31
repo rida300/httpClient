@@ -1,0 +1,502 @@
+HTTP/1.1 200 OK
+Date: Fri, 13 Dec 2019 04:16:34 GMT
+Server: Apache/2.4.10 (Debian)
+Last-Modified: Wed, 25 Sep 2019 18:13:53 GMT
+ETag: "5211-593649d992aca"
+Accept-Ranges: bytes
+Content-Length: 21009
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type">
+		<title>Eugene Vasserman's home at KSU</title>
+
+		<style>
+            .custombutton {
+                height: 30px;
+                border:1px solid #000000;
+                background-color:#ffffff;
+                color:#000000;
+                border-radius: 4px;
+                moz-border-radius: 4px;
+                webkit-border-radius: 4px;
+                -moz-box-shadow: 2px 2px 3px 1px #666666;
+                -webkit-box-shadow: 2px 2px 3px 1px #666666;
+                box-shadow: 2px 2px 3px 1px #666666;
+            }
+
+        </style>
+
+  <style type="text/css">
+    .subject{
+    font-weight: bold;
+  }
+
+    .content {
+      padding: 4px;
+      width: 375px;
+      height: 120px;
+      border: 1px solid #cccccc;
+      background-color: #efefef;
+    }
+
+    .body
+    {
+      display:block;
+    }
+  </style>
+
+  <script type="text/javascript">
+
+      <!–
+
+      var speed = 400
+      var activeDiv=0
+      var divCount=2
+
+      function hideAllDivs() {
+      	var x=0
+
+      	while (document.getElementById("news"+x)) {
+      	  document.getElementById("news"+x).style.display="none"
+      	  x++
+	}
+      }
+
+      function showDiv() {
+      	var selectedDivObj = document.getElementById("news" + activeDiv)
+
+      	hideAllDivs()
+      	selectedDivObj.style.display = "block"
+      	activeDiv =(activeDiv < divCount – 1 )? activeDiv + 1 : 0
+      	setTimeout("showDiv()", speed)
+      }
+
+      function beginTicking() {
+      	while (document.getElementById("news" + divCount)!=null)
+      	  divCount++
+      	showDiv()
+      }
+
+      	if (window.addEventListener)
+      	  window.addEventListener("load", beginTicking, false)
+      	else if (window.attachEvent)
+      	  window.attachEvent("onload", beginTicking)
+
+      //–>
+
+    </script>    
+
+    <script type="text/javascript" language="JavaScript">
+
+	    function init() {
+		    handleDeadlines();
+		    initCalendar();
+	    }
+
+            function handleDeadlines() {
+                list_items = document.getElementsByName("deadline")
+                for (i=0; i<list_items.length; i++) {
+                    var text = list_items[i].innerHTML
+                        var t = text.replace(/([a-zA-Z]+ \d\d?)(st|nd|rd|th)?,? (\d{4})?/, "$1 $3");
+                    var d = Date.parse(t);
+                    today = new Date();
+                    if (today.getTime()>d) {
+                        list_items[i].innerHTML = "<strike>" + text + "</strike> (has passed)";
+                    }
+                }
+            }
+
+
+	    var calendar_start_hidden = true;
+	    var hiddenCalendar = false;
+	    var imgSrc = "calendar.png";
+	    var loaderSrc = "loader-32x32.gif";
+	    //var calSrc="https://webmail.ksu.edu/home/eyv@ksu.edu/School.html?view=week";
+	    var calSrc="https://calendar.google.com/calendar/embed?src=eugene.vasserman%40gmail.com&showTitle=0&showPrint=0&showCalendars=0&mode=WEEK&ctz=America%2FChicago";
+            var calLink="https://calendar.google.com/calendar/embed?src=eugene.vasserman%40gmail.com&showCalendars=0&mode=WEEK&ctz=America/Chicago";
+
+	    //var isMobile = /iPad|iPhone|iPod/.test(navigator.userAgent);
+	    //var isSafari = navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+
+	    var linkTxt = 'Calendar()"><img style="padding-left: 5px; vertical-align="center; height="15px;" src="' + imgSrc + '"> &nbsp; <b>Click to ';
+	    //var showStr = '<button style="height: 32px;" onClick="javascipt:show' + linkTxt + 'show my calendar (inline)<\/b><\/button><br>';
+	    //var hideStr = '<button style="height: 32px;" onClick="javascipt:hide' + linkTxt + 'hide the calendar<\/b><\/button><br>';
+	    //var showStr = '<button onClick="javascipt:show' + linkTxt + 'show my calendar<\/b><\/button> (for some reason I can\'t get embedding to work, so this will redirect you)<br>';
+	    var showStr = '<button class="custombutton" onClick="javascipt:show' + linkTxt + 'show my calendar (inline)<\/b><\/button><br>';
+	    var hideStr = '<button class="custombutton" onClick="javascipt:hide' + linkTxt + 'hide the calendar<\/b><\/button><br>';
+
+
+	    function initCalendar() {
+		    //pre-load images
+		    var icon = new Image();
+		    icon.src = imgSrc;
+
+		    if (calendar_start_hidden) hideCalendar();
+		    else showCalendar();
+	    }
+
+	    function hideCalendar() {
+		    cal = document.getElementById("calendar_frame");
+		    cal.style.visibility = "hidden";
+		    cal.width = "0";
+		    cal.height = "0";
+		    hiddenCalendar = true;
+
+		    document.getElementById("calendar_link").innerHTML = showStr;
+		    document.getElementById("calendar_spacer").innerHTML = "";
+	    }
+
+	    function showCalendar() {
+		    document.getElementById("calendar_link").innerHTML = '<img style="padding-top: 5px; padding-left: 15px; vertical-align: center; height: 15px;" src="' + loaderSrc + '"> &nbsp; <b><small>Loading calendar...</b></small>';
+		    
+		    cal = document.getElementById("calendar_frame");
+
+		    cal.src = calSrc;
+
+		    if (cal.readyState) { // IE
+			    cal.onreadystatechange = function() {
+				    if (cal.readyState == "complete") {
+					    cal.onreadystatechange = null;
+					    unhideIFrame();
+				    }
+			    }
+		    }
+		    cal.onload = unhideIFrame;
+	    }
+
+	    function unhideIFrame() {
+		    cal = document.getElementById("calendar_frame");
+		    cal.width="800";
+		    cal.height="600";
+		    cal.style.visibility = "visible";
+		    hiddenCalendar = false;
+		    document.getElementById("calendar_link").innerHTML = hideStr;
+		    //document.getElementById("calendar_spacer").innerHTML = '<button onClick="javascript:location.href=(\"' + calLink + '\")">Click to show as full page</button><br><br>';
+		    document.getElementById("calendar_spacer").innerHTML = '<b><a href="' + calLink + '" target="_blank">Click to show the calendar in a new window</a></b><br><br>';
+	    }
+
+	  </script>
+
+      </head>
+
+<body onload="parent.init();">
+<!-- <body> -->
+
+<table>
+	<tr><td nowrap width="70%">
+		<img src="me_five.jpg" alt="A picture of Eugene" height="325" style="padding-left:15px; padding-right:35px;" align="left">
+
+	<span style="font-size: 1.75em; font-weight: bold;">Eugene Y. Vasserman</span>
+	<br>
+	&nbsp; &nbsp; &nbsp; <span style="font-size: 1em; font-weight: bold;">Женя Вассерман</span>
+	<br>
+	&nbsp; &nbsp; &nbsp; <span style="font-size: 1em; font-weight: bold;">吴雨津</span>
+	<br>
+	<br>
+	Associate Professor and Keystone Research Scholar,
+	<a href="http://www.cs.ksu.edu">Department of Computer Science</a><br>
+	Director, <a href="http://cisa.ksu.edu/"><b>Center for Information and Systems Assurance</b></a><br>
+	<a href="http://www.ksu.edu/">Kansas State University</a><br><p>
+	<b>Email:</b> <span style="font-weight: bold;"><a href="mailto&#58;eyv&#64;ksu&#46;edu">eyv&nbsp;&nbsp;|@|&nbsp;&nbsp;ksu&nbsp;&nbsp;(...)&nbsp;&nbsp;edu</a></span><br>
+	<b>Phone:</b> <a href="tel:7855327944">785.532.7944</a><br>
+	<b>Office:</b> 2171 <a href="https://www.myatlascms.com/map/?id=731&mrkIid=133724">Engineering Hall</a><br>
+	<b>Office hours</b> (Fall 2019)<b>:</b><br>
+	<span style="padding-left: 25px;">Mondays 1:00 pm &ndash; 2:30 pm,</span><br>
+	<span style="padding-left: 25px;">Tuesdays 1:00 pm &ndash; 2:30 pm,</span><br>
+	<span style="padding-left: 25px;">or <a href="https://x.ai/calendar/eyv/">by appointment</a>: (the link will automatically display the times I'm free),</span><br>
+	<span style="padding-left: 25px;">or you can always <a href="mailto&#58;eyv&#64;ksu&#46;edu?subject=[Meeting request]">send me an email</a> and schedule a time to talk.</span>
+<br>
+<br>
+<br>
+
+<span style="font-size: 1.25em; font-weight: bold; padding-left: 15px;">Quick links:</span>
+    <span style="font-weight: bold;">
+        <a href="papers.html">Publications</a> |
+	    <a href="#teaching">Teaching</a> |
+	    <a href="#students">Lab/Students</a> |
+	    <!-- <a href="#venues">Conferences</a> | -->
+        <a href="projects.html">Projects</a> |
+        <a href="me.html">About me</a>
+    </span>
+  </td>
+  <!-- <td nowrap align="right" width="30%">
+<span style="font-size: 1.25em; font-weight: bold; padding-left: 15px;">Quick links:</span>
+      <a href="papers.html">Publications</a><br>
+      <a href="#teaching">Teaching</a><br>
+      <a href="#students">Lab/Students</a><br>
+	    <!-- <a href="#venues">Conferences</a> | -->
+            <!-- <a href="projects.html">Projects</a><br>
+        <a href="me.html">About me</a>
+      </td> -->
+</tr>
+
+<!-- <td align="right" valign="middle" width="30%">
+  <div id="news0">
+
+  <div>Subject For The First Item</div>
+
+  <div>
+    ITEM
+  </div>
+
+  </div>
+
+  <div id="news1">
+
+  <div>Another Item with Its Subject</div>
+
+  <div>
+    ITEM2
+  </div>
+
+  </div>
+
+</td> -->
+</tr>
+
+<tr><td>
+<br>
+<div id="calendar_link">
+
+<span style="padding-left: 3em;">
+<b><a href="https://x.ai/calendar/eyv/" target="_blank">Schedule a meeting (new window)</a></b>
+</span>
+<span style="padding-left: 3em;">
+<b><a href="https://calendar.google.com/calendar/embed?src=eugene.vasserman%40gmail.com&ctz=America%2FChicago&showCalendars=0&mode=WEEK" target="_blank">See my up-to-date calendar (new window)</a></b>
+</span>
+<br><br>
+</div>
+<iframe id="calendar_frame" rel="nofollow" style="visibility:hidden; border:solid 1px #777" height="600" width="800"></iframe>
+<div id="calendar_spacer">
+</div>
+</td>
+<td><b><a href="https://x.ai/calendar/eyv/">or schedule a meeting directly</a></b></td>
+</tr>
+</table>
+
+<!-- <span style="font-size: 1.25em; font-weight: bold;">Resources:</span><br>
+http://www.ksu.edu/grad/admissions/docs/International%20Student%20Guide%202014.pdf
+http://www.cs.ksu.edu/sites/default/files/PHD_degree_guidelines%202014.pdf
+http://www.cs.ksu.edu/sites/default/files/PHD_degree_guidelines%202014_0.pdf
+http://www.cs.ksu.edu/sites/default/files/Ms%20Guidelines%202014.pdf
+http://www.cs.ksu.edu/sites/default/files/MSE%20Guidelines%202009.pdf
+http://www.ksu.edu/grad/graduate-handbook/index.html
+-->
+
+Although I don't necessarily have open paid research positions right now, I'm always looking for
+bright and motivated graduate and undergraduate students who share my research interests or just
+want to learn more about security. If you are already at KSU, <a
+href="mailto&#58;eyv&#64;ksu&#46;edu">email me</a>, or <a
+href="https://x.ai/calendar/eyv/">schedule a meeting</a>, or just stop by my office (2171
+Engineering Hall). Tell me about yourself, your experience with security, and what you might
+enjoy working on.
+
+<p>If you aren't at KSU then I would encourage you to <b><a
+href="http://www.ksu.edu/grad/admissions/application-process/">apply</a></b>
+and indicate an interest in computer and information security.
+
+<b>Note:</b> While I try to answer all emails, I don't always get the chance. <b>A way to make
+yourself stand out <i>in a good way</i></b> is to have specific questions, comments, or
+suggestions regarding security research or <a href="papers.html">papers</a>. A way to make
+yourself stand out <i>in a bad way</i> is to <a
+href="http://www.letmegooglethat.com/?q=What+are+KSU+application+deadlines%3F">ask questions to which you can easily find the answer yourself</a>.</p>
+
+<br>
+
+<span style="font-size: 1.25em; font-weight: bold;">Research interests</span>
+<ul>
+  <li>Distributed system security</li>
+  <li>Privacy and anonymity</li>
+  <li>Network security</li>
+  <li>Operating system security</li>
+  <li>Medical and embedded device security</li>
+  <li>Usable security</li>
+  <li>Applied cryptography</li>
+  <!-- <li>Public policy and cyber-law</li> -->
+</ul>
+<p>
+
+<!-- why apply? -->
+
+<br>
+
+<!-- <img src="CDC_logo.png"> <a href="https://orgsync.com/98242/chapter">KSU Cyber Defense Club (CDC)</a> -->
+
+<!-- <img src="CISA_logo.png"> <a href="http://cisa.ksu.edu">Center for Information and Systems Assurance</a> -->
+
+<div id="teaching">
+<span style="font-size: 1.5em; font-weight: bold;">Teaching</span>
+<table>
+    <tr><td>
+            <b>&nbsp; Fall 2019:</b>
+        </td><td>
+	      &nbsp; <a href="https://k-state.instructure.com/courses/77835">CIS 525: Introduction to Network Programming</a><br>
+	      &nbsp; <a href="https://k-state.instructure.com/courses/81152">CIS 890: Research Methods in Computer Science</a><br>
+	</td></tr>
+    <tr><td>
+            <b>&nbsp; Spring 2019:</b>
+        </td><td>
+	    &nbsp; <a href="https://k-state.instructure.com/courses/71296">CIS 755: Systems Security</a><br>
+	</td></tr>
+    <tr><td>
+            <b>&nbsp; Fall 2018:</b>
+        </td><td>
+	      &nbsp; <a href="https://k-state.instructure.com/courses/60901">CIS 525: Introduction to Computer Networks</a><br>
+	</td></tr>
+    <tr><td>
+            <b>&nbsp; Spring 2018:</b>
+        </td><td>
+	      &nbsp; <a href="https://k-state.instructure.com/courses/53912">CIS 755: Advanced Computer Security</a><br>
+	</td></tr>
+        <td>
+            <b>&nbsp; Fall 2017:</b>
+        </td><td>
+            &nbsp; <a href="https://k-state.instructure.com/courses/43271">CIS 525: Introduction to Computer Networks</a><br>
+            &nbsp; <a href="https://k-state.instructure.com/courses/45954">CIS 490: Cyber Defense Basics</a> (with <a href="/~chandanchowdhury/">Chandan Chowdhury</a>)<br>
+        </td></tr>
+	  <tr><td>
+	    <b>&nbsp; Spring 2016:</b>
+	</td><td>
+	      &nbsp; <a href="https://k-state.instructure.com/courses/20678">CIS 755: Advanced Computer Security</a><br>
+	</td></tr>
+    <tr><td>
+            <b>&nbsp; Fall 2015:</b>
+        </td><td>
+            &nbsp; <a href="https://k-state.instructure.com/courses/8014">CIS 525: Telecommunications and Data Communications Systems</a><br>
+            &nbsp; <a href="https://k-state.instructure.com/courses/10840">CIS 551/751: (Introduction to) Computer and Information Security</a><br>
+    </td></tr>
+    <tr><td>
+		    <b>&nbsp; Spring 2015:</b>
+	</td><td>
+	      <!-- &nbsp; <a href="CIS755_S15/">CIS 755: Advanced Computer Security</a><br> -->
+		    &nbsp; CIS 755: Advanced Computer Security<br>
+    </td></tr>
+    <tr><td>
+		    <b>&nbsp; Fall 2014:</b>
+	</td><td>
+	      <!-- &nbsp; <a href="CIS525_F14/">CIS 525: Telecommunications and Data Communications Systems</a><br> -->
+		    &nbsp; CIS 525: Telecommunications and Data Communications Systems<br>
+    </td></tr>
+    <tr><td>
+	    <b>&nbsp; Spring 2014:</b>
+      </td><td>
+	      <!-- &nbsp; <a href="CIS755_S14/">CIS 755: Advanced Computer Security</a><br> -->
+		    &nbsp; CIS 755: Advanced Computer Security<br>
+      </td></tr>
+    <tr><td>
+      	  <b>&nbsp; Fall 2013:</b>
+      </td><td>
+	      <!-- &nbsp; <a href="CIS525_F13/">CIS 525: Telecommunications and Data Communications Systems</a><br> -->
+		    &nbsp; CIS 525: Telecommunications and Data Communications Systems<br>
+    </td></tr>
+    <tr><td>
+	    <b>&nbsp; Spring 2013:</b>
+	</td><td>
+	      <!-- &nbsp; <a href="CIS755_S13/">CIS 755: Advanced Computer Security</a><br> -->
+		    &nbsp; CIS 755: Advanced Computer Security<br>
+    </td></tr>
+    <tr><td>
+      	  <b>&nbsp; Fall 2012:</b>
+	</td><td>
+	      <!-- &nbsp; <a href="CIS525_F12/">CIS 525: Telecommunications and Data Communications Systems</a><br> -->
+		    &nbsp; CIS 525: Telecommunications and Data Communications Systems<br>
+    </td></tr>
+    <tr><td>
+      	  <b>&nbsp; Spring 2012:</b>
+	</td><td>
+	      <!-- &nbsp; <a href="CIS755_S12/">CIS 755: Advanced Computer Security</a><br> -->
+		    &nbsp; CIS 755: Advanced Computer Security<br>
+    </td></tr>
+    <tr><td>
+      	  <b>&nbsp; Fall 2011:</b>
+    </td><td>
+	      <!-- &nbsp; <a href="CIS590_798_F11/">CIS 590/798: Secure Networks and Distributed Systems</a><br> -->
+		    &nbsp; CIS 590/798: Secure Networks and Distributed Systems<br>
+    </td></tr>
+    <tr><td>
+      	      <b>&nbsp; Spring 2011:</b>
+      </td><td>
+	      <!-- &nbsp; <a href="CIS890_S11/">CIS 590/890: Advanced Computer Security</a><br> -->
+		    &nbsp; CIS 590/890: Advanced Computer Security<br>
+    </td></tr>
+    <tr><td>
+	      <b>&nbsp; Fall 2010:</b>
+	</td><td>
+	      <!-- &nbsp; <a href="CIS890_F10/">CIS 890: Secure Networks and Distributed Systems</a><br> -->
+		    &nbsp; CIS 890: Secure Networks and Distributed Systems<br>
+    </td></tr>
+</table>
+</div>
+<p>
+
+<br>
+
+<div id="lab">
+<span style="font-size: 1.5em; font-weight: bold;">Systems and Network Security (SyNeSec) Lab</span>
+</div>
+<p>
+<div id="students">
+  <span style="font-size: 1.25em; font-weight: bold;">I have the privilege of working with a number of bright and talented students:</span><p>
+<img src="lab.jpg" alt="Most of the lab posing for a photo" height="600" style="padding-left:15px; padding-right:15px;" align="middle"><p>
+
+<!-- <h3>I have the privilege of working with a number of bright and talented students:</h3> -->
+<!-- <br> -->
+<span style="font-size: 1em; font-weight: bold;">Current:</span>
+    <ul>
+	<li>Caleb Fleming
+        <li>Erick Martinez-Rosales
+        <li><a href="/~qtasali/">Qais Tasali</a>
+    </ul>
+
+<span id="alumni" style="font-size: 1em; font-weight: bold;">Graduate alumni:</span>
+    <ul>
+          <!-- <li><a href="https://dlzpserver.noip.me/">Derek Pockrandt</a> -->
+          <!-- <li>Yang Xue -->
+	<li>Chandan Chowdhury, MS, 2019&nbsp;&nbsp;Thesis: "<a href="http://krex.k-state.edu/dspace/handle/2097/39482">Finding malicious usage via capture, storage, analysis and visualization of DNS packets</a>."&nbsp;&nbsp;After graduation: Corelight
+          <!-- <li>Mike McCall -->
+	<li>Matt Webb, MS, 2018.&nbsp;&nbsp;Thesis: "<a href="http://krex.k-state.edu/dspace/handle/2097/38783">Evaluating tool based automated malware analysis through persistence mechanism detection</a>."&nbsp;&nbsp;After graduation: Sandia National Labs
+	<li>Hong Liu, PhD, 2017.&nbsp;&nbsp;Dissertation: "<a href="https://krex.ksu.edu/dspace/handle/2097/38232">Black-, grey-, and white-box side-channel programming for software integrity checking</a>."<!--&nbsp;&nbsp;After graduation: pending--> 
+        <li>Sajid Rahman, MS, 2017.&nbsp;&nbsp;Report: "<a href="https://krex.ksu.edu/dspace/handle/2097/34563">An empirical case study on Stack Overflow to explore developers' security challenges</a>."&nbsp;&nbsp;After graduation: University of Florida Institute of Cybersecurity
+        <li>Zainab Ruhwanya, MS, 2015.&nbsp;&nbsp;Thesis: "<a
+href="https://krex.ksu.edu/dspace/handle/2097/20409">Attitudes toward, and awareness of,
+            online privacy and security: A quantitative comparison of East Africa and U.S.
+            internet users</a>."&nbsp;&nbsp;After graduation: University of Cape Town
+        <li>Scott Bell, PhD, 2014.&nbsp;&nbsp;Dissertation: "<a href="https://krex.ksu.edu/dspace/handle/2097/18168">Low overhead methods for improving education capacity and outcomes in computer science</a>."&nbsp;&nbsp;After graduation: Northwest Missouri State University
+        <li>Kevin Dean, MS, 2014.&nbsp;&nbsp;Thesis: "<a href="https://krex.ksu.edu/dspace/handle/2097/17638">TrustVoucher: Automating trust in websites</a>."&nbsp;&nbsp;After graduation: Xpanxion
+        <li>Carlos Salazar, MS, 2014.&nbsp;&nbsp;Thesis: "<a href="https://krex.ksu.edu/dspace/handle/2097/18234">A security architecture for medical application platforms</a>."&nbsp;&nbsp;After graduation: Cerner
+        <li>Jayson Sharp, MS, 2014.&nbsp;&nbsp;Thesis: "<a href="https://krex.ksu.edu/dspace/handle/2097/18223">A logging service as a universal subscriber</a>."&nbsp;&nbsp;After graduation: Microsoft
+        <li>Keith McVey, MS, 2014.&nbsp;&nbsp;Thesis: "<a href="https://krex.ksu.edu/dspace/handle/2097/18244">Modeling vulnerabilities in cyber-physical spaces</a>."&nbsp;&nbsp;After graduation: Portsmouth Naval Shipyard
+    </ul>
+  </div>
+<p>
+
+
+<br>
+<p>
+<!-- <a href="http://www.usenix.org"><img src="https://www.usenix.org/sites/default/files/usenix310x100.png" width=232.5 height=75 border=0 alt="The USENIX Association"></a><br> -->
+<a href="http://www.usenix.org"><img src="https://www.usenix.org/sites/default/files/usenix310x100.png" width=232 border=0 alt="The USENIX Association"></a><br>
+<p>
+  <a href="https://www.usenix.org/students/" style="font-weight: bold;">USENIX information for students</a><br>
+<a href="https://www.usenix.org/grant-program-overview">USENIX travel grants</a>
+
+<p>
+
+<br>
+I usually sign my email with PGP/GPG. (I used to do it more often &ndash; almost always &ndash; but some webmail and mobile email clients balk when seeing S/MIME or PGP/MIME. Hopefully the situation will improve.) My key fingerprint is 
+<a href="https://keyserver.pgp.com/vkd/DownloadKey.event?keyid=0x6CA8C576F6DC58DA">D11D 886D 2805 6735 609B 8B0E 6CA8 C576 F6DC 58DA</a></p>
+<p style="font-size: .75em;">
+(The old, expired key was <a href="https://keyserver.pgp.com/vkd/DownloadKey.event?keyid=0x57F8CDF9AC65A44D">D94D 2F3B 02BA 2F78 247F  98AA 57F8 CDF9 AC65 A44D)</a>
+</p>
+
+
+<!--#config errmsg="" -->
+<!--#include file="footer-validate.html" -->
+<!--#include file="footer-modified.html" -->
+
+</body>
+</html>
